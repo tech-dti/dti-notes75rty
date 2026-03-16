@@ -380,7 +380,11 @@ node_modules/
 </div>
 </div>
 
+<br/>
+
 ---
+
+<br/>
 
 ## Detailed Workflow 2: Fork -> Branch -> PR -> Merge -> Sync
 
@@ -462,174 +466,22 @@ node_modules/
 </ul>
 </div>
 
+---
+
+## External Resources & Deep Dives
+
+Looking to master Git and GitHub? Explore these highly recommended external resources:
+
+<div class="sources">
+<ul>
+    <li><a href="https://docs.github.com/en/get-started" target="_blank">GitHub Official Getting Started Guide</a> - The primary source for all things GitHub.</li>
+    <li><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book</a> - The ultimate, free, and comprehensive book on Git.</li>
+    <li><a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a> - A highly visual and interactive tutorial for understanding Git branches and merges.</li>
+    <li><a href="https://training.github.com/" target="_blank">GitHub Cheat Sheet</a> - A handy reference guide for Git commands.</li>
+    <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a> - Excellent step-by-step guides covering advanced Git workflows.</li>
+</ul>
 </div>
 
-<style>
-.modern-note {
-    font-family: "Inter", "Segoe UI", sans-serif;
-    line-height: 1.6;
-}
+</div>
 
-.tldr-block {
-    background: rgba(47, 128, 237, 0.08);
-    border: 1px dashed rgba(47, 128, 237, 0.4);
-    padding: 1.2rem;
-    border-radius: 14px;
-    margin: 1.5rem 0;
-}
 
-.tldr-block h4 {
-    margin-top: 0 !important;
-    color: #2f80ed;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem !important;
-}
-
-.definition-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.definition-card {
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.12), rgba(52, 152, 219, 0.12));
-    border: 1px solid rgba(52, 152, 219, 0.2);
-    padding: 1.4rem;
-    border-radius: 16px;
-}
-
-.mini-list {
-    display: grid;
-    gap: 0.4rem;
-    margin-top: 0.8rem;
-}
-
-.usecase-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.usecase-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--vp-c-divider);
-    padding: 1rem 1.2rem;
-    border-radius: 12px;
-}
-
-.comparison-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-}
-
-.compare-card {
-    background: var(--vp-c-bg-soft);
-    padding: 1.2rem;
-    border-radius: 12px;
-    border: 1px solid var(--vp-c-divider);
-}
-
-.compare-card.alt h3 {
-    color: #16a085;
-}
-
-.command-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.command-card {
-    background: rgba(var(--vp-c-bg-soft-rgb), 0.7);
-    border: 1px solid var(--vp-c-divider);
-    padding: 1rem 1.2rem;
-    border-radius: 14px;
-}
-
-.command-card.gh {
-    border-color: rgba(46, 204, 113, 0.4);
-    background: rgba(46, 204, 113, 0.08);
-}
-
-.cmd {
-    font-size: 0.9rem;
-    margin: 0.4rem 0;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-}
-
-.feature-card {
-    background: var(--vp-c-bg-soft);
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 14px;
-    padding: 1.2rem;
-}
-
-.steps {
-    margin-top: 0.8rem;
-    display: grid;
-    gap: 0.3rem;
-}
-
-.note-block {
-    margin-top: 1rem;
-    font-weight: 700;
-}
-
-.workflow-steps {
-    display: grid;
-    gap: 1rem;
-}
-
-.step {
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 12px;
-    padding: 1rem 1.2rem;
-    background: rgba(var(--vp-c-bg-soft-rgb), 0.6);
-}
-
-.platform-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.platform-card {
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 12px;
-    padding: 0.9rem 1rem;
-    background: rgba(52, 152, 219, 0.06);
-}
-
-.callout {
-    background: rgba(241, 196, 15, 0.12);
-    border: 1px solid rgba(241, 196, 15, 0.4);
-    padding: 1rem 1.2rem;
-    border-radius: 12px;
-}
-
-.sources {
-    background: rgba(52, 152, 219, 0.06);
-    border: 1px solid rgba(52, 152, 219, 0.2);
-    padding: 1rem 1.2rem;
-    border-radius: 12px;
-}
-
-@media (max-width: 900px) {
-    .definition-grid,
-    .comparison-grid,
-    .command-grid,
-    .feature-grid,
-    .usecase-grid,
-    .platform-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>

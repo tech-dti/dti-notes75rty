@@ -13,6 +13,10 @@ export default defineConfig({
       { text: 'Git & GitHub', link: '/DTI/GitHub' }
     ],
 
+    search: {
+      provider: 'local'
+    },
+
     sidebar: [
       {
         text: 'DTI',

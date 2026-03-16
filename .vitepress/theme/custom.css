@@ -1,0 +1,272 @@
+/* Override the default search button styling to make it longer */
+:root {
+  --vp-nav-search-button-width: 240px;
+}
+
+@media (min-width: 768px) {
+  .DocSearch-Button {
+    width: var(--vp-nav-search-button-width) !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  
+  .DocSearch-Button-Placeholder {
+    display: block !important;
+    flex: 1 !important;
+    text-align: left !important;
+  }
+
+  .DocSearch-Button-Keys {
+    margin-left: auto !important;
+  }
+  
+  /* Make the exact class for local search longer if different */
+  .search-button,
+  .VPNavBarSearch .DocSearch-Button,
+  .VPNavBarSearch > button {
+    width: var(--vp-nav-search-button-width) !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* ========================================= */
+/* GLOBAL NOTE DESIGN SYSTEM                 */
+/* ========================================= */
+
+.modern-note {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    color: var(--vp-c-text-1);
+}
+
+/* Base grids */
+.comparison-grid,
+.concept-grid,
+.definition-grid,
+.usecase-grid,
+.command-grid,
+.feature-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.comparison-grid,
+.concept-grid,
+.definition-grid,
+.usecase-grid,
+.command-grid,
+.feature-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .comparison-grid,
+    .concept-grid,
+    .definition-grid,
+    .usecase-grid,
+    .command-grid,
+    .feature-grid,
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Generic Card Styles for Clean Design */
+.gui-card, .cli-card,
+.concept-card,
+.definition-card,
+.usecase-card,
+.compare-card,
+.command-card,
+.feature-card,
+.platform-card,
+.step {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-divider);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.gui-card:hover, .cli-card:hover,
+.concept-card:hover,
+.definition-card:hover,
+.usecase-card:hover,
+.compare-card:hover,
+.command-card:hover,
+.feature-card:hover,
+.platform-card:hover,
+.step:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: var(--vp-c-brand-1);
+}
+
+/* Card Specifics */
+.gui-card h3 { color: var(--vp-c-danger-1); margin-top: 0; }
+.cli-card h3 { color: var(--vp-c-success-1); margin-top: 0; }
+.compare-card.alt h3 { color: var(--vp-c-brand-1); }
+
+.platform-card {
+    padding: 0.9rem 1rem;
+}
+
+/* Term Gallery */
+.terms-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.term-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 2fr;
+    align-items: center;
+    background: var(--vp-c-bg-soft);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--vp-c-divider);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.term-tag {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.term-tag.cli { background: var(--vp-c-blue-soft); color: var(--vp-c-blue-1); }
+.term-tag.shell { background: var(--vp-c-yellow-soft); color: var(--vp-c-yellow-1); }
+.term-tag.tty { background: var(--vp-c-purple-soft); color: var(--vp-c-purple-1); }
+
+@media (max-width: 768px) {
+    .term-item { grid-template-columns: 1fr; gap: 0.8rem; }
+    .term-tag { width: fit-content; }
+}
+
+/* Highlight blocks / Callouts */
+.modern-note blockquote {
+    background: var(--vp-c-bg-alt);
+    border-left: 4px solid var(--vp-c-brand-1);
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+
+.tldr-block,
+.callout,
+.sources {
+    background: var(--vp-c-bg-soft);
+    border-left: 4px solid var(--vp-c-brand-1);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.tldr-block h4 {
+    margin-top: 0 !important;
+    color: var(--vp-c-brand-1);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem !important;
+}
+
+.tldr-block ul,
+.sources ul {
+    margin: 0 !important;
+    padding-left: 1.5rem !important;
+}
+
+/* Lists and Commands */
+.mini-list {
+    display: grid;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+}
+
+.cmd {
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+    font-family: var(--vp-font-family-mono);
+}
+
+.steps {
+    margin-top: 0.8rem;
+    display: grid;
+    gap: 0.3rem;
+}
+
+.note-block {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.workflow-steps {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Mac Terminal Block */
+.mac-terminal-wrapper {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mac-terminal-header {
+    background: #2d2d2d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.mac-terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.mac-terminal-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mac-terminal-buttons .close { background-color: #ff5f56; }
+.mac-terminal-buttons .minimize { background-color: #ffbd2e; }
+.mac-terminal-buttons .maximize { background-color: #27c93f; }
+
+.mac-terminal-title {
+    color: #999;
+    font-size: 0.85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: calc(50% - 28px);
+    transform: translateX(50%);
+}
+
+.mac-terminal-wrapper div[class*="language-"] {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
